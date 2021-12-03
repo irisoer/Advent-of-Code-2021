@@ -10,23 +10,13 @@ $inc=0;
 
 $numberOfNumbers=count($inputDay1);
 
-//DEEL 1
-foreach($inputDay1 as $number){
-    if($input<$number){
-        $y=$y+1;
-    }
-    $input=$number;
-}
-print("1. Increase = ".$y . "\n");
-
-
-//DEEL 2
+//PART 2
 while($x<($numberOfNumbers-2)){
     for ($z = $x; $z <$x+ 3; $z++) {
         $input = $inputDay1[$z];
         $I = $I + $input;
 
-}
+    }
 
     if($x>0 AND $lastOne<$I){
         $inc=$inc+1;
@@ -37,7 +27,3 @@ while($x<($numberOfNumbers-2)){
 }
 
 print("2. Increase = ".$inc);
-
-
-
-
